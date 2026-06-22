@@ -153,7 +153,7 @@ function buildPool(){
   });
 }
 let pool=buildPool();
-const UNAMES={1:"UD1 · Presupuesto/LGP",2:"UD2 · Leyes anuales",3:"UD3 · Fases del gasto",4:"UD4 · Modificaciones",5:"UD5 · ACF y PaJ"};
+const UNAMES={1:"Lunes · T51 Presupuesto/LGP",2:"Martes · T52 Leyes anuales",3:"Miércoles · T55 Fases del gasto",4:"Jueves · T53 Modificaciones",5:"Viernes · T56 ACF y PaJ"};
 const SK="gace_bvi_s1_v1";
 let state={unit:0,mode:"all"};
 let db=(()=>{try{const r=localStorage.getItem(SK);return r?JSON.parse(r):{records:{}};}catch(e){return{records:{}};}})();
@@ -187,7 +187,8 @@ function filtered(){
   return items;
 }
 function renderNav(){
-  const tabs=[{v:0,l:"Todas"},...[1,2,3,4,5].map(u=>({v:u,l:"UD"+u}))];
+  const DNAMES={1:"Lun·T51",2:"Mar·T52",3:"Mié·T55",4:"Jue·T53",5:"Vie·T56"};
+  const tabs=[{v:0,l:"Toda la semana"},...[1,2,3,4,5].map(u=>({v:u,l:DNAMES[u]}))];
   document.getElementById("nav").innerHTML=tabs.map(t=>`<button class="nb${state.unit==t.v?" active":""}" onclick="setUnit(${t.v})">${t.l}</button>`).join("")
     +`<button class="nb${state.mode==="adaptive"?" active":""}" style="margin-left:auto" onclick="setMode('adaptive')">🎯 Adaptativo</button>`;
 }
