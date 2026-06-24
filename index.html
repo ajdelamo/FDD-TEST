@@ -12,11 +12,12 @@ header h1{font-size:18px;font-weight:600;color:#1a1a18;letter-spacing:.01em}
 header p{margin-top:5px;color:#888780;font-size:12px}
 .wrap{max-width:720px;margin:0 auto;padding:28px 16px 60px}
 .section-label{font-size:11px;font-weight:600;color:#888780;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid #d3d1c7}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px;margin-bottom:24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px;margin-bottom:28px}
 .card{background:#fff;border:1.5px solid #d3d1c7;border-radius:12px;padding:18px 18px 14px;text-decoration:none;color:#1a1a18;display:flex;flex-direction:column;gap:6px;transition:border-color .15s,box-shadow .15s}
 .card:hover{border-color:#185fa5;box-shadow:0 2px 8px rgba(24,95,165,.10)}
 .badge{font-size:10px;font-weight:600;color:#185fa5;background:#e6f1fb;padding:2px 8px;border-radius:5px;letter-spacing:.04em;align-self:flex-start}
 .badge.gace{color:#0f6e56;background:#eaf3de}
+.badge.ingles{color:#854f0b;background:#faeeda}
 .card h2{font-size:14px;font-weight:600;color:#1a1a18;line-height:1.4}
 .card p{font-size:12px;color:#888780;line-height:1.55}
 .go{margin-top:6px;font-size:12px;color:#185fa5;font-weight:600}
@@ -26,19 +27,19 @@ footer{text-align:center;color:#b4b2a9;font-size:11px;padding:20px;border-top:1p
 <body>
 <header>
   <h1>📚 Portal de Estudio · Antonio</h1>
-  <p>Tests adaptativos con seguimiento de progreso · Grado en Derecho &amp; GACE 2027</p>
+  <p>Tests adaptativos con seguimiento de progreso · Grado en Derecho · GACE 2027 · Inglés</p>
 </header>
 <div class="wrap">
 
   <div class="section-label">Grado en Derecho — UI1</div>
   <div class="grid">
-    <a class="card" href="fdd.html">
+    <a class="card" href="grado/fdd.html">
       <span class="badge">TEORÍA Y FILOSOFÍA DEL DERECHO</span>
       <h2>FDD · Test Adaptativo</h2>
       <p>81 preguntas, 6 unidades. Filtros por error y modo adaptativo top-20.</p>
       <span class="go">Abrir test →</span>
     </a>
-    <a class="card" href="due.html">
+    <a class="card" href="grado/due.html">
       <span class="badge">DERECHO DE LA UNIÓN EUROPEA</span>
       <h2>DUE · Test Adaptativo</h2>
       <p>101 preguntas, 6 unidades. Filtros por error y modo adaptativo top-20.</p>
@@ -48,19 +49,19 @@ footer{text-align:center;color:#b4b2a9;font-size:11px;padding:20px;border-top:1p
 
   <div class="section-label">GACE 2027 — Oposición Gestión Administrativa</div>
   <div class="grid">
-    <a class="card" href="LPAC.html">
+    <a class="card" href="gace/LPAC.html">
       <span class="badge gace">BLOQUE IV · LEY 39/2015</span>
       <h2>LPACAP · Test Adaptativo</h2>
       <p>103 preguntas, 11 bloques. Filtros por error y modo adaptativo top-20.</p>
       <span class="go">Abrir test →</span>
     </a>
-    <a class="card" href="GACE_BVI_01.html">
+    <a class="card" href="gace/GACE_BVI_01.html">
       <span class="badge gace">BLOQUE VI · SEMANA 01</span>
       <h2>Gestión Financiera · Test Adaptativo</h2>
       <p>72 preguntas · T51, T52, T55, T53, T56 · LGP y presupuesto.</p>
       <span class="go">Abrir test →</span>
     </a>
-    <a class="card" href="GACE_Repaso_General_2027.html">
+    <a class="card" href="gace/GACE_Repaso_General_2027.html">
       <span class="badge gace">REPASO ACUMULADO</span>
       <h2>Repaso General GACE 2027</h2>
       <p>Crece cada semana. Repaso de todo lo estudiado desde junio 2026.</p>
@@ -68,7 +69,17 @@ footer{text-align:center;color:#b4b2a9;font-size:11px;padding:20px;border-top:1p
     </a>
   </div>
 
+  <div class="section-label">Inglés — B1 → Fluidez</div>
+  <div class="grid">
+    <a class="card" href="ingles/" style="border-style:dashed;cursor:default;pointer-events:none;opacity:.5">
+      <span class="badge ingles">PRÓXIMAMENTE</span>
+      <h2>Vocabulario · Test Adaptativo</h2>
+      <p>Tests de vocabulario y gramática. En preparación.</p>
+      <span class="go" style="color:#888780">Próximamente →</span>
+    </a>
+  </div>
+
 </div>
-<footer>Generado y mantenido por Antonio · ajdelamo/UI1</footer>
+<footer>Generado y mantenido por Antonio · ajdelamo/Portal-Estudio</footer>
 </body>
 </html>
